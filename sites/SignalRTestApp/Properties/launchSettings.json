@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SignalRTestApp": {
+      "commandName": "Project",
+      "commandLineArgs": "123"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/rx-signalr",
+  "lib": {
+    "entryFile": "src/public-api.ts",
+    "amdId": "@code-art/rx-signalr",
+    "umdId": "codeArt.rxSignalr"
+  }
+}
