@@ -1,6 +1,6 @@
 {
   "name": "@code-art/rx-signalr",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "private": true,
   "description": "Library that wraps SignalR events as RxJs Observables.",
   "repository": {
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/sherif-elmetainy/rx-signalr#readme",
   "peerDependencies": {
-    "rxjs": "^6.0.0",
+    "rxjs": "~6.5.2",
     "jquery": "^3.3.1",
     "signalr": "^2.3.0"
   }
