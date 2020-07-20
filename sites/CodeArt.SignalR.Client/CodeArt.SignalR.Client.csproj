@@ -1,6 +1,13 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net45</TargetFramework>
+    <Company>Code Art</Company>
+    <Authors>Sherif Elmetainy</Authors>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseExpression>UNLICENSED</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/code-art-eg/rx-signalr</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/code-art-eg/rx-signalr.git</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="obj\**" />
