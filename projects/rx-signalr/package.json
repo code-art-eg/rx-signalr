@@ -1,11 +1,11 @@
 {
-  "name": "@code-art/rx-signalr",
-  "version": "0.2.0",
-  "private": true,
+  "name": "@code-art-eg/rx-signalr",
+  "version": "0.2.1",
+  "private": false,
   "description": "Library that wraps SignalR events as RxJs Observables.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sherif-elmetainy/rx-signalr.git"
+    "url": "git+https://github.com/code-art-eg/rx-signalr.git"
   },
   "keywords": [
     "signalr",
@@ -14,9 +14,9 @@
   "author": "Sherif Elmetainy (Code Art)",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/sherif-elmetainy/rx-signalr/issues"
+    "url": "https://github.com/code-art-eg/rx-signalr/issues"
   },
-  "homepage": "https://github.com/sherif-elmetainy/rx-signalr#readme",
+  "homepage": "https://github.com/code-art-eg/rx-signalr#readme",
   "peerDependencies": {
     "rxjs": "~6.5.2",
     "jquery": "^3.3.1",

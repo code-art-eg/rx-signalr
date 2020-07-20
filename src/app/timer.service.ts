@@ -1,4 +1,4 @@
-import { signalRObservable } from '@code-art/rx-signalr';
+import { signalRObservable } from '@code-art-eg/rx-signalr';
 import { Injectable } from '@angular/core';
 
 export interface TimerEvent {

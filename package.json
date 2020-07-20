@@ -7,7 +7,8 @@
     "build": "ng build rx-signalr",
     "test": "ng test rx-signalr",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "pub": "cd dist/rx-signalr && yarn publish"
   },
   "private": true,
   "dependencies": {

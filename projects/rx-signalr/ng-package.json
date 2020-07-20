@@ -3,7 +3,7 @@
   "dest": "../../dist/rx-signalr",
   "lib": {
     "entryFile": "src/public-api.ts",
-    "amdId": "@code-art/rx-signalr",
+    "amdId": "@code-art-eg/rx-signalr",
     "umdId": "codeArt.rxSignalr"
   }
 }

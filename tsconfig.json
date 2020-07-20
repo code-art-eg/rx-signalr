@@ -20,10 +20,10 @@
       "dom"
     ],
     "paths": {
-      "@code-art/rx-signalr": [
+      "@code-art-eg/rx-signalr": [
         "projects/rx-signalr/src/public-api"
       ],
-      "@code-art/rx-signalr/*": [
+      "@code-art-eg/rx-signalr/*": [
         "projects/rx-signalr/src/*"
       ]
     }

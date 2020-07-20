@@ -1,11 +1,11 @@
-# @code-art/rx-signalr
+# @code-art-eg/rx-signalr
 
 ## About the library
-This @code-art/rx-signalr library is a javascript library that implements a wrapper around [SignalR](https://github.com/SignalR/SignalR) to that events are emitted as stream of events using [RxJs](https://rxjs-dev.firebaseapp.com/). The observerable created by this library will automatically start connections when subscribed to, and stop when unsubsribed to. Also since my use case is an app that needs to run for long time unattended, the library has option to handle disconnected or retrying connection if connection initially fails.
+This @code-art-eg/rx-signalr library is a javascript library that implements a wrapper around [SignalR](https://github.com/SignalR/SignalR) to that events are emitted as stream of events using [RxJs](https://rxjs-dev.firebaseapp.com/). The observerable created by this library will automatically start connections when subscribed to, and stop when unsubsribed to. Also since my use case is an app that needs to run for long time unattended, the library has option to handle disconnected or retrying connection if connection initially fails.
 
 ## Installing the library
 ```bash
-yarn add jquery signalr rxjs @code-art/rx-signalr
+yarn add jquery signalr rxjs @code-art-eg/rx-signalr
 ```
 
 Note: Even though Angular CLI was used for creating and testing the library, it's not required for using the library. 
@@ -13,7 +13,7 @@ Note: Even though Angular CLI was used for creating and testing the library, it'
 ## Using the library
 
 ```typescript
-import { signalRObservable } from '@code-art/rx-signalr';
+import { signalRObservable } from '@code-art-eg/rx-signalr';
 
 interface MyEvent {
   msg: string;
