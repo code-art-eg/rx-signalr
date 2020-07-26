@@ -88,6 +88,7 @@ describe('signalRObservable Retry', () => {
       await expectDisonnected(t$);
 
       await launchServer(port);
+      await wait(2000);
       await expectMessage(t$);
     } finally {
       sub.unsubscribe();
