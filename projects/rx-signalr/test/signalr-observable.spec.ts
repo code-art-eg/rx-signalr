@@ -146,4 +146,18 @@ describe('signalRObservable', () => {
       sub.unsubscribe();
     }
   });
+
+  it('has a guid connectionId', async () => {
+    const opt = createOptions('g1');
+    const t$ = signalRObservable<EchoEvent>(opt);
+    const sub = t$.subscribe((e) => {
+    });
+    try {
+      await expectMessage(t$);
+      const id = t$.connectionId;
+      expect(/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id)).toBe(true);
+    } finally {
+      sub.unsubscribe();
+    }
+  });
 });

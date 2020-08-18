@@ -501,6 +501,10 @@ class SignalRConnection extends KeyedRefCountedObject<RxSignalRConnectionOptions
     return this.key.url || '(default)';
   }
 
+  public get connectionId(): string {
+    return this._hubConnection ? (this._hubConnection.id || '') : '';
+  }
+
   /**
    * handle connection on start (start the connection)
    */
@@ -596,6 +600,10 @@ class HubConnectionInfo {
   public close(): Promise<void> {
     return this.connection.stop();
   }
+
+  public get connectionId(): string {
+    return this.connection ? this.connection.connectionId : '';
+  }
 }
 
 /**
@@ -665,6 +673,10 @@ class HubInfo extends KeyedRefCountedObject<HubOptions> {
    */
   public get connectionName(): string {
     return this._connection.name;
+  }
+
+  public get connectionId(): string {
+    return this._connectionInfo$.value ? this._connectionInfo$.value.connectionId : '';
   }
 
   /**
@@ -862,6 +874,8 @@ export interface SignalRObservable<T> extends Observable<T> {
    */
   readonly connected: boolean;
 
+  readonly connectionId: string;
+
   /**
    * wait for server connection status to be connected
    */
@@ -919,6 +933,7 @@ class SignalRObservableImpl<T> extends Observable<T> implements SignalRObservabl
       if (!hub) {
         hub = HubInfo.getByKey(this._options);
         this._hub$.next(hub);
+
         hub.complete$.subscribe(() => {
           this._hub$.next(undefined);
         });
@@ -977,6 +992,10 @@ class SignalRObservableImpl<T> extends Observable<T> implements SignalRObservabl
    */
   public get connected(): boolean {
     return this._hub$.value ? this._hub$.value.connected : false;
+  }
+
+  public get connectionId(): string {
+    return this._hub$.value ? this._hub$.value.connectionId : '';
   }
 
   /**

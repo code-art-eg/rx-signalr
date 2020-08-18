@@ -1,6 +1,6 @@
 {
   "name": "@code-art-eg/rx-signalr",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "private": false,
   "description": "Library that wraps SignalR events as RxJs Observables.",
   "repository": {
