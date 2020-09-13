@@ -1,6 +1,6 @@
 {
   "name": "@code-art-eg/rx-signalr",
-  "version": "0.3.0",
+  "version": "10.0.0",
   "private": false,
   "description": "Library that wraps SignalR events as RxJs Observables.",
   "repository": {
@@ -17,6 +17,9 @@
     "url": "https://github.com/code-art-eg/rx-signalr/issues"
   },
   "homepage": "https://github.com/code-art-eg/rx-signalr#readme",
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
   "peerDependencies": {
     "rxjs": "~6.5.2",
     "jquery": "^3.3.1",
