@@ -21,7 +21,7 @@
     "tslib": "^2.0.0"
   },
   "peerDependencies": {
-    "rxjs": "~6.5.2",
+    "rxjs": "^6.5.2",
     "jquery": "^3.3.1",
     "signalr": "^2.3.0"
   }
